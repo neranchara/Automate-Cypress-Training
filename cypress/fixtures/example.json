@@ -1,0 +1,8 @@
+{
+  "name": "Using fixtures to represent data",
+  "email": "hello@cypress.io",
+  "body": "Fixtures are a great way to mock data for responses to routes",
+  "url": "http://his-centrix-staging.princhealth.service/#!/authentication/login",
+  "username":"neranchara.kapsuv",
+  "password":"abc@1234"
+}

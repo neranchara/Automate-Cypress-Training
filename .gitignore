@@ -1,0 +1,3 @@
+Cypress/reports/*
+node_modules/*
+mochawesome-report/*

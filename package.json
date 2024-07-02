@@ -1,0 +1,30 @@
+{
+  "name": "automated-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --spec cypress/e2e/face*.cy.js",
+    "pre-test": "npx cypress run --spec cypress/e2e/face*.cy.js",
+    "env:stg": "npx cypress run --env run_env=stg --spec 'cypress/e2e/face*.cy.js'",
+    "env:uat": "npx cypress run --env run_env=uat --spec 'cypress/e2e/face*.cy.js'",
+    "db:stg": "npx cypress run --env run_env=stg --spec cypress/e2e/query.js",
+    "db:qa": "npx cypress run --env run_env=qa --spec cypress/e2e/query.js",
+    "env:api": "npx cypress run --env run_env=api --spec 'cypress/e2e/api.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.9.0"
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-mongodb": "^6.2.0",
+    "marge": "^1.0.1",
+    "merge": "^2.1.1",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "mssql": "^11.0.0",
+    "pg": "^8.12.0"
+  }
+}
